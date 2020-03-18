@@ -4,7 +4,7 @@
 #
 Name     : perl-Ref-Util-XS
 Version  : 0.117
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libr/libref-util-xs-perl/libref-util-xs-perl_0.117-1.debian.tar.xz
@@ -79,6 +79,7 @@ make TEST_VERBOSE=1 test
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Ref-Util-XS
 cp %{_builddir}/Ref-Util-XS-0.117/LICENSE %{buildroot}/usr/share/package-licenses/perl-Ref-Util-XS/d18e6ab3560144c16a98150b92ed5703c1952029
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Ref-Util-XS/e4953dfdcc75727e91a58bf3adbd4d2aa733dfda
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -99,8 +100,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-Ref-Util-XS/d18e6ab3560144c16a98150b92ed5703c1952029
+/usr/share/package-licenses/perl-Ref-Util-XS/e4953dfdcc75727e91a58bf3adbd4d2aa733dfda
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Ref/Util/XS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Ref/Util/XS/XS.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/Ref/Util/XS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/Ref/Util/XS/XS.so
