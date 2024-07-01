@@ -4,7 +4,7 @@
 #
 Name     : perl-Ref-Util-XS
 Version  : 0.117
-Release  : 25
+Release  : 26
 URL      : https://cpan.metacpan.org/authors/id/X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XS/XSAWYERX/Ref-Util-XS-0.117.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libr/libref-util-xs-perl/libref-util-xs-perl_0.117-1.debian.tar.xz
